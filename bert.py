@@ -47,6 +47,7 @@ def cleaning(content):
     content = re.sub(r"\([^()]*\)", "", content)  # remove words in brackets
     content = content.replace("_____", "")
     content = content.replace("■", "")
+    content = content.replace("•","")
 
     punctuation = '''!()-[]|{};:'"\,<>/?@#$%^&*_~—“””'''  # punctuation
     for i in content:
